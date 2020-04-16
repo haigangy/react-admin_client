@@ -35,17 +35,18 @@ class AdminHeader extends Component {
         return (
             <div>
                 <div className="top-line">
-                    <p className="top-line-content">
+                    <span className="top-line-content">
                         欢迎，{this.props.username}
                         <Link onClick={this.handleLogout} to="/login">
                             &nbsp;&nbsp;退出
                         </Link>
-                    </p>
+                    </span>
                 </div>
                 <div className="bottom-line">
-                    <h1 className="title"></h1>
-                    <div className="time-weather ">
+                    <div className="bottom-line-left">首页</div>
+                    <div className="bottom-line-right ">
                         <span className="time"> {this.state.time} </span>
+                        <img src="" alt="weather"></img>
                         <span className="weather">weather</span>
                     </div>
 
